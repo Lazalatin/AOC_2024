@@ -15,6 +15,18 @@ class Day1Tests {
         assertEquals(expected, result)
     }
 
+    @Test
+    fun `Day 1 - Second Riddle Example`() {
+        // GIVEN
+        val expected = "31"
+
+        // WHEN
+        val result = runCommand("kotlinc -script day1/day1_part2.kts day1/example.txt").trimEnd()
+
+        // THEN
+        assertEquals(expected, result)
+    }
+
     private fun runCommand(command: String) = Runtime.getRuntime()
         .exec(arrayOf("/bin/sh", "-c", command))
         .inputStream.bufferedReader().readText()
