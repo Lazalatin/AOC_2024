@@ -18,6 +18,20 @@ class Day2Tests {
         assertEquals(expected, result)
     }
 
+    @Test
+    fun `Day 2 - Second Riddle Example`() {
+        // GIVEN
+        val expected = "4"
+
+        println("Running in: ${Paths.get("").toAbsolutePath()}")
+
+        // WHEN
+        val result = runCommand("kotlinc -script day2/day2_part2.kts day2/example.txt").trimEnd()
+
+        // THEN
+        assertEquals(expected, result)
+    }
+
     private fun runCommand(command: String) = Runtime.getRuntime()
         .exec(arrayOf("/bin/sh", "-c", command))
         .inputStream.bufferedReader().readText()

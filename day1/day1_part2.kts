@@ -1,5 +1,4 @@
 import java.io.File
-import kotlin.math.abs
 
 var result: Int = 0
 val left = arrayListOf<Int>()
