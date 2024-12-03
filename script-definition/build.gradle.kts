@@ -1,6 +1,5 @@
 plugins {
-    id("java")
-    kotlin("jvm")
+    kotlin("jvm") version "2.1.0"
 }
 
 group = "com.github.lazalatin.adventofcode2023"

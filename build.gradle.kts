@@ -21,7 +21,7 @@ dependencies {
 sourceSets {
     test {
         kotlin {
-            srcDirs("./day1/tests", "./day2/tests",)
+            srcDirs("./day1/tests","./day2/tests","./day3/tests")
         }
     }
 }
